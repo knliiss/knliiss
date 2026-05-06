@@ -7,7 +7,7 @@
 Building backend-heavy platforms, microservices, real-time systems and clean developer-oriented products.
 
 [![Telegram](https://img.shields.io/badge/Telegram-@knaliz-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/knaliz)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Replace_Link-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)]([https://linkedin.com/in/your-linkedin](https://www.linkedin.com/in/vitalii-lototskyi-20aa25374/))
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Vitalii_Lototskyi-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vitalii-lototskyi-20aa25374/)
 [![Email](https://img.shields.io/badge/Email-vitallot21%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vitallot21@gmail.com)
 
 </div>
