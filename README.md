@@ -2,142 +2,144 @@
 
 # Vitalii Lototskyi
 
-### Full-Stack Developer | Java / Spring Boot / React / TypeScript
+### Software Engineer · Backend & Distributed Systems
 
-Building backend-heavy platforms, microservices, real-time systems and clean developer-oriented products.
+I build backend-heavy products, distributed architectures, realtime systems and full-stack applications.
 
-[![Telegram](https://img.shields.io/badge/Telegram-@knaliz-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/knaliz)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Vitalii_Lototskyi-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vitalii-lototskyi-20aa25374/)
-[![Email](https://img.shields.io/badge/Email-vitallot21%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vitallot21@gmail.com)
-
-</div>
-
----
-
-## About me
-
-I am a Software Engineering student from Lviv, Ukraine, focused on building full-stack applications with a strong backend foundation.
-
-My main engineering interests are:
-
-- microservice architecture
-- Java / Spring Boot backend systems
-- event-driven communication
-- real-time notifications
-- authentication and role-based access control
-- React + TypeScript frontend development
-- deployment and production-like infrastructure
-
-I prefer building projects end-to-end: from database schema and backend architecture to frontend integration, deployment and operational checks.
-
----
-
-## Tech Stack
-
-<div align="center">
-
-### Backend
-
-![Java](https://img.shields.io/badge/Java_21-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
-![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white)
-![Spring Cloud](https://img.shields.io/badge/Spring_Cloud-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
-![REST API](https://img.shields.io/badge/REST_API-111111?style=for-the-badge)
-![WebSocket](https://img.shields.io/badge/WebSocket-010101?style=for-the-badge)
-
-### Frontend
-
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=111)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css&logoColor=white)
-
-### Data / Messaging / Infrastructure
-
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
-![Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white)
-![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white)
-![MinIO](https://img.shields.io/badge/MinIO-C72E49?style=for-the-badge&logo=minio&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+[![Telegram](https://img.shields.io/badge/Telegram-@knaliz-26A5E4?style=flat-square&logo=telegram&logoColor=white)](https://t.me/knaliz)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Vitalii_Lototskyi-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vitalii-lototskyi-20aa25374/)
+[![Email](https://img.shields.io/badge/Email-vitallot21%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:vitallot21@gmail.com)
 
 </div>
 
 ---
 
-## Featured Systems
+## About
+
+I focus on backend engineering and system architecture.
+
+I enjoy building systems where the difficult part is not a single feature, but the interaction between service boundaries, messaging, authentication, realtime behavior, data consistency, deployment and maintainability.
+
+Most of my work follows the whole lifecycle:
+
+```text
+architecture → backend → integrations → frontend → infrastructure → deployment → runtime debugging
+```
+
+My main active project is **Mnemos**.
+
+---
+
+# Mnemos
+
+### Event-driven platform built around Kotlin, Spring and distributed services
+
+**Mnemos** is the project I currently spend most of my development time on.
+
+It has grown into a multi-service platform with independent domains for accounts, profiles, wallets, events, rewards, notifications, realtime communication, personalization, social features, moderation, payments, player data and Telegram integration.
+
+Rather than growing as a single application, the system is structured around explicit service boundaries, shared contracts and reusable infrastructure.
+
+### System structure
+
+The backend currently contains dedicated services for:
+
+```text
+account            profile            wallet
+event              reward             notification
+realtime           personalization    social
+moderation         payment            player-directory
+telegram-bot       gateway
+```
+
+Shared platform components cover:
+
+- Kafka-based messaging
+- inbox / outbox processing
+- inter-service contracts
+- reusable security and web libraries
+- Keycloak authentication
+- realtime communication
+- gateway routing
+- common infrastructure shared across services
+
+The user-facing web application is a React + TypeScript mini-app.
+
+The Mnemos ecosystem also includes **Mnemos Collector** — a separate Rust client responsible for collecting and transmitting client-side data to the platform.
+
+### Stack
+
+**Backend:** Kotlin · Spring Boot · Spring Security  
+**Messaging & realtime:** Kafka · WebSocket  
+**Identity:** Keycloak  
+**Data & infrastructure:** PostgreSQL · Redis · MinIO · Docker  
+**Frontend:** React · TypeScript · Vite  
+**Client tooling:** Rust
+
+<p>
+  <a href="https://github.com/knliiss/Mnemos"><strong>Explore Mnemos →</strong></a>
+</p>
+
+---
+
+## Studium
+
+### Full-stack Learning Management System
+
+**Studium** is a microservice-oriented academic platform built around student, teacher and administrator workflows.
+
+It covers authentication, academic structures, schedules, assignments, submissions, testing, grades, file storage, notifications, analytics, audit trails and Telegram integration.
+
+The backend is split into domain-oriented Spring Boot services behind a common gateway. Kafka is used for asynchronous domain communication, PostgreSQL for persistence, Redis for supporting infrastructure and MinIO for object storage.
+
+The frontend is a role-aware React + TypeScript application.
+
+**Stack:** Java 21 · Spring Boot · Spring Cloud Gateway · Kafka · Redis · PostgreSQL · MinIO · React · TypeScript · Docker
+
+<p>
+  <a href="https://github.com/knliiss/Studium"><strong>Explore Studium →</strong></a>
+</p>
+
+---
+
+## Technology
 
 <table>
 <tr>
-<td width="50%">
+<td valign="top">
 
-### Studium
+### Backend
 
-LMS-style microservice platform built as a Java 21 multi-module monorepo.
-
-**Core focus:**
-- authentication and authorization
-- academic structure management
-- schedules, assignments and testing
-- file storage
-- analytics
-- real-time notifications
-- Kafka-based domain events
-
-**Stack:** Java 21, Spring Boot, Spring Cloud Gateway, Kafka, Redis, PostgreSQL, MinIO, React, TypeScript
+Kotlin  
+Java  
+Spring Boot  
+Spring Security  
+REST  
+WebSocket
 
 </td>
-<td width="50%">
+<td valign="top">
 
-### Trajecta
+### Distributed systems
 
-Telemetry processing and visualization platform for ArduPilot flight logs.
-
-**Core focus:**
-- upload and processing pipeline
-- backend task orchestration
-- async worker communication
-- real-time WebSocket updates
-- replay, diagnostics and analytics UI
-- VPS deployment
-
-**Stack:** Spring Boot, React, Python/Rust Worker, RabbitMQ, PostgreSQL, Redis, MinIO, Docker, Caddy
+Kafka  
+Redis  
+Keycloak  
+PostgreSQL  
+MinIO  
+Docker
 
 </td>
-</tr>
+<td valign="top">
 
-<tr>
-<td width="50%">
+### Frontend & tooling
 
-### SaoBot
-
-Multi-module Java/Spring Telegram bot platform.
-
-**Core focus:**
-- Telegram bot service
-- command/callback handling
-- player management
-- database service
-- config server
-- shared modules
-
-**Stack:** Java 21, Spring Boot, Gradle, Telegram Bots API, MySQL, JPA, Caffeine
-
-</td>
-<td width="50%">
-
-### Engineering Competitions
-
-Firmware and software work for engineering competition tasks.
-
-**Highlights:**
-- 2nd place in engineering competition
-- microcontroller firmware development
-- team-based problem solving
-- deployment and backend responsibility during hackathons
-
-**Focus:** embedded logic, backend APIs, deployment, teamwork
+React  
+TypeScript  
+Vite  
+Rust  
+Gradle  
+GitHub Actions
 
 </td>
 </tr>
@@ -145,12 +147,24 @@ Firmware and software work for engineering competition tasks.
 
 ---
 
-## Engineering Focus
+## Engineering interests
 
-```txt
-Backend architecture     ███████████████████░░
-Microservices           ██████████████████░░░
-Java / Spring Boot       ███████████████████░░
-React / TypeScript       ████████████████░░░░░
-DevOps / Deployment      ██████████████░░░░░░░
-Testing / Quality        █████████████░░░░░░░░
+- distributed backend systems
+- event-driven architecture
+- service boundaries and communication
+- realtime applications
+- authentication and authorization
+- reliability and data consistency
+- production infrastructure
+- architecture evolution and refactoring
+- debugging real runtime behavior
+
+I prefer developing a smaller number of systems deeply over collecting many small showcase projects.
+
+---
+
+<div align="center">
+
+**Software Engineering · Lviv, Ukraine**
+
+</div>
