@@ -1,78 +1,58 @@
-<p align="center">
-  <img src="./assets/identity.svg" alt="Vitalii Lototskyi — Software Engineer" width="100%" />
-</p>
+# Vitalii Lototskyi
 
-<p align="center">
-  <strong>Software Engineer</strong> · Kotlin / Java · Lviv, Ukraine
-</p>
+**Software Engineer · Kotlin / Java**  
+Lviv, Ukraine
 
-<p align="center">
-  <a href="https://portfolio.knalis.rest/">Portfolio</a> &nbsp;·&nbsp;
-  <a href="https://www.linkedin.com/in/vitalii-lototskyi-20aa25374/">LinkedIn</a> &nbsp;·&nbsp;
-  <a href="mailto:vitallot21@gmail.com">Email</a> &nbsp;·&nbsp;
-  <a href="https://portfolio.knalis.rest/en/resume/">Résumé</a>
-</p>
+Backend systems, network protocols, and full-stack applications. Independent projects span products with active users, high-concurrency software, and open-source developer tools.
+
+[Portfolio](https://portfolio.knalis.rest/) · [LinkedIn](https://www.linkedin.com/in/vitalii-lototskyi-20aa25374/) · [Email](mailto:vitallot21@gmail.com)
 
 ---
 
-Backend-focused software engineering spanning distributed services, network protocols and product interfaces. Work includes independently developed applications with active users, open-source tools and full-stack systems.
+## Projects
 
-## Selected projects
+### [Mnemos](https://portfolio.knalis.rest/en/work/mnemos/)
+**Realtime event platform · ~150 users**
 
-### 01 — [Mnemos](https://portfolio.knalis.rest/en/work/mnemos/)
-
-**Realtime event platform** · Approximately 150 users · Paid features
-
-A multi-service platform for live Cristalix/SAO events, player presence, subscriptions, notifications, profiles and account features. Kotlin and Spring Boot services exchange events through Kafka, with outbox/inbox processing, authenticated WebSocket connections and a React/TypeScript frontend.
+Event-driven platform for live game events, subscriptions, notifications, player profiles, and social features. Built around Kotlin/Spring Boot services, Kafka messaging, reliable event processing, and a React frontend.
 
 [Case study](https://portfolio.knalis.rest/en/work/mnemos/)
 
-### 02 — [WaveCode](https://portfolio.knalis.rest/en/work/wavecode/)
+### [WaveCode](https://portfolio.knalis.rest/en/work/wavecode/)
+**Open-source optical code format**
 
-**Open optical-code format and cross-platform SDK**
+Rust library for encoding supported media links and timestamps into compact scannable codes. Includes error correction, native interfaces, and a mobile-first WebAssembly scanner.
 
-A Rust library that encodes supported media links and optional timestamps into compact optical marks. The format includes error correction and needs no hosted track-ID database. A separate mobile-first web application provides camera scanning, code generation and SVG/PNG export.
+[Case study](https://portfolio.knalis.rest/en/work/wavecode/) · [Live scanner](https://wavecode.knalis.rest/) · [Rust SDK](https://github.com/knliiss/WaveCode)
 
-[Case study](https://portfolio.knalis.rest/en/work/wavecode/) · [Try the scanner](https://wavecode.knalis.rest/) · [Rust library](https://github.com/knliiss/WaveCode) · [Web app source](https://github.com/knliiss/WaveCode-Web)
+### [C7xBotManager](https://portfolio.knalis.rest/en/work/c7xbotmanager/)
+**Headless automation platform · up to 500 concurrent sessions**
 
-### 03 — [C7xBotManager](https://portfolio.knalis.rest/en/work/c7xbotmanager/)
-
-**Headless multi-session automation** · Up to 500 concurrent clients · Approximately 10 paying users
-
-A Java-based network runtime and native Go desktop manager for independent client sessions, protocol handling, proxy pools and automated recovery. Built for operating many accounts without starting a full game client for each session.
+Modular Java runtime for managing independent client sessions, network protocols, proxy pools, and recovery. Paired with a native Go desktop interface; distributed as a paid niche product.
 
 [Case study](https://portfolio.knalis.rest/en/work/c7xbotmanager/)
 
-### 04 — [Studium](https://portfolio.knalis.rest/en/work/studium/)
+### [Studium](https://portfolio.knalis.rest/en/work/studium/)
+**Full-stack learning management system**
 
-**Full-stack learning management system** · Academic project
+Role-based application for students, teachers, and administrators. Java/Spring services, API gateway, PostgreSQL, Kafka, and a React frontend. Developed and tested as an academic project.
 
-A role-based platform covering assignments, submissions, tests, grades, schedules and file management. Java/Spring services sit behind an API gateway, with a React/TypeScript interface and PostgreSQL, Kafka, Redis and MinIO. Developed and tested in a non-production environment.
-
-[Case study](https://portfolio.knalis.rest/en/work/studium/) · [Repository](https://github.com/knliiss/Studium)
+[Case study](https://portfolio.knalis.rest/en/work/studium/) · [Source](https://github.com/knliiss/Studium)
 
 ---
 
-## Engineering focus
+## Technical focus
 
-**Backend** &nbsp; Kotlin · Java · Spring Boot · Netty · REST APIs
-
-**Systems & data** &nbsp; Kafka · PostgreSQL · Redis · WebSocket · Keycloak · Docker
-
-**Product development** &nbsp; TypeScript · React · Rust · Go
+**Backend & systems:** Kotlin, Java, Spring Boot, Netty, REST, WebSocket  
+**Data & infrastructure:** Kafka, PostgreSQL, Redis, Docker, Keycloak  
+**Additional development:** TypeScript, React, Rust, Go
 
 ## Recognition
 
-**2026** · 1st place, Innovative Design — BEST Engineering Competition, BEST Lviv. Airlogix *Most Creative Approach* award.
+**2026** · 1st place, Innovative Design — BEST Engineering Competition (BEST Lviv); Airlogix *Most Creative Approach*.
 
-**2025** · 2nd place, Team Design — BEST Engineering Competition, BEST Lviv.
+**2025** · 2nd place, Team Design — BEST Engineering Competition (BEST Lviv).
 
 ## Education
 
 **Lviv Polytechnic National University** · Software Engineering · 3rd year
-
----
-
-<p align="center">
-  <a href="https://portfolio.knalis.rest/"><strong>View portfolio and engineering case studies</strong></a>
-</p>
