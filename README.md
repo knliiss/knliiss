@@ -2,169 +2,81 @@
 
 # Vitalii Lototskyi
 
-### Software Engineer · Backend & Distributed Systems
+**Software Engineer · Backend & Full-Stack Development**
 
-I build backend-heavy products, distributed architectures, realtime systems and full-stack applications.
+Kotlin & Java · Lviv, Ukraine
 
-[![Telegram](https://img.shields.io/badge/Telegram-@knaliz-26A5E4?style=flat-square&logo=telegram&logoColor=white)](https://t.me/knaliz)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Vitalii_Lototskyi-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vitalii-lototskyi-20aa25374/)
-[![Email](https://img.shields.io/badge/Email-vitallot21%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:vitallot21@gmail.com)
+[Portfolio](https://portfolio.knalis.rest/) · [LinkedIn](https://www.linkedin.com/in/vitalii-lototskyi-20aa25374/) · [GitHub](https://github.com/knliiss) · [Email](mailto:vitallot21@gmail.com)
 
 </div>
 
 ---
 
-## About
+Software engineer working across **distributed backend systems, realtime applications and full-stack products**. Projects range from independently operated services with active users to network runtimes, an optical-code SDK and an academic learning platform.
 
-I focus on backend engineering and system architecture.
+## Selected work
 
-I enjoy building systems where the difficult part is not a single feature, but the interaction between service boundaries, messaging, authentication, realtime behavior, data consistency, deployment and maintainability.
+### [Mnemos](https://portfolio.knalis.rest/en/work/mnemos/) · Realtime platform
 
-Most of my work follows the whole lifecycle:
+A multi-service platform for live Cristalix/SAO events, player presence, subscriptions, notifications, account management, rewards and social functionality. Approximately **150 users** and paid features.
 
-```text
-architecture → backend → integrations → frontend → infrastructure → deployment → runtime debugging
-```
+- Domain-oriented **Kotlin / Spring Boot** services with Kafka event contracts, outbox/inbox delivery and WebSocket updates.
+- **PostgreSQL, Redis, Keycloak**, React/TypeScript frontend and Telegram integrations.
+- Live event filtering, wipe leaderboards, profiles, wallet and team workflows.
 
-My main active project is **Mnemos**.
+[Project case](https://portfolio.knalis.rest/en/work/mnemos/) · [Repository](https://github.com/knliiss/Mnemos)
 
----
+### [WaveCode](https://portfolio.knalis.rest/en/work/wavecode/) · Open optical format
 
-# Mnemos
+A compact optical format for encoding supported music and video links, including native timestamps where available. Codes decode to platform identities without a WaveCode-hosted lookup database.
 
-### Event-driven platform built around Kotlin, Spring and distributed services
+- **Rust** encoder/decoder with error correction, optical image scanning, CLI and native bindings.
+- **WebAssembly** integration in a mobile-first scanner and code generator.
+- Working SVG/PNG export and camera/photo scanning.
 
-**Mnemos** is the project I currently spend most of my development time on.
+[Project case](https://portfolio.knalis.rest/en/work/wavecode/) · [Open the scanner](https://wavecode.knalis.rest/) · [Rust SDK](https://github.com/knliiss/WaveCode) · [Web client](https://github.com/knliiss/WaveCode-Web)
 
-It has grown into a multi-service platform with independent domains for accounts, profiles, wallets, events, rewards, notifications, realtime communication, personalization, social features, moderation, payments, player data and Telegram integration.
+### [C7xBotManager](https://portfolio.knalis.rest/en/work/c7xbotmanager/) · Concurrent network runtime
 
-Rather than growing as a single application, the system is structured around explicit service boundaries, shared contracts and reusable infrastructure.
+A headless multi-session automation platform with a native desktop manager, independent client lifecycles, proxy pools, diagnostics and recovery flows. Used in configurations of up to **500 simultaneous sessions** and distributed to roughly **10 paying users**.
 
-### System structure
+- **Java / Netty / NIO** runtime for protocol handling, session management and concurrency.
+- Native **Go / WebView2** management interface and account operations.
+- Proxy health checks, failover, reconnect policies and event-driven automation.
 
-The backend currently contains dedicated services for:
+[Engineering case](https://portfolio.knalis.rest/en/work/c7xbotmanager/)
 
-```text
-account            profile            wallet
-event              reward             notification
-realtime           personalization    social
-moderation         payment            player-directory
-telegram-bot       gateway
-```
+### [Studium](https://portfolio.knalis.rest/en/work/studium/) · Full-stack LMS
 
-Shared platform components cover:
+An independently developed academic platform with distinct student, teacher and administration workflows: courses, schedules, assignments, submissions, tests, grades, files and notifications.
 
-- Kafka-based messaging
-- inbox / outbox processing
-- inter-service contracts
-- reusable security and web libraries
-- Keycloak authentication
-- realtime communication
-- gateway routing
-- common infrastructure shared across services
+- **Java 21 / Spring Boot** services behind Spring Cloud Gateway.
+- **PostgreSQL, Kafka, Redis, MinIO** and role-aware **React / TypeScript** frontend.
+- Developed and tested in a non-production environment.
 
-The user-facing web application is a React + TypeScript mini-app.
+[Project case](https://portfolio.knalis.rest/en/work/studium/) · [Repository](https://github.com/knliiss/Studium)
 
-The Mnemos ecosystem also includes **Mnemos Collector** — a separate Rust client responsible for collecting and transmitting client-side data to the platform.
+## Technical focus
 
-### Stack
+| Backend & systems | Infrastructure & data | Frontend & additional languages |
+| --- | --- | --- |
+| Kotlin, Java, Spring Boot, REST, WebSocket, Netty | Kafka, PostgreSQL, Redis, Docker, Keycloak, MinIO | TypeScript, React, Rust, Go |
 
-**Backend:** Kotlin · Spring Boot · Spring Security  
-**Messaging & realtime:** Kafka · WebSocket  
-**Identity:** Keycloak  
-**Data & infrastructure:** PostgreSQL · Redis · MinIO · Docker  
-**Frontend:** React · TypeScript · Vite  
-**Client tooling:** Rust
+Strengths include service boundaries, asynchronous processing, concurrent networking, authorization, integration testing and maintaining applications in operation.
 
-<p>
-  <a href="https://github.com/knliiss/Mnemos"><strong>Explore Mnemos →</strong></a>
-</p>
+## Recognition
 
----
+- **2026 — 1st place, Innovative Design**, BEST Engineering Competition (BEST Lviv). Airlogix **Most Creative Approach** award.
+- **2025 — 2nd place, Team Design**, BEST Engineering Competition (BEST Lviv).
 
-## Studium
+## Education
 
-### Full-stack Learning Management System
-
-**Studium** is a microservice-oriented academic platform built around student, teacher and administrator workflows.
-
-It covers authentication, academic structures, schedules, assignments, submissions, testing, grades, file storage, notifications, analytics, audit trails and Telegram integration.
-
-The backend is split into domain-oriented Spring Boot services behind a common gateway. Kafka is used for asynchronous domain communication, PostgreSQL for persistence, Redis for supporting infrastructure and MinIO for object storage.
-
-The frontend is a role-aware React + TypeScript application.
-
-**Stack:** Java 21 · Spring Boot · Spring Cloud Gateway · Kafka · Redis · PostgreSQL · MinIO · React · TypeScript · Docker
-
-<p>
-  <a href="https://github.com/knliiss/Studium"><strong>Explore Studium →</strong></a>
-</p>
-
----
-
-## Technology
-
-<table>
-<tr>
-<td valign="top">
-
-### Backend
-
-Kotlin  
-Java  
-Spring Boot  
-Spring Security  
-REST  
-WebSocket
-
-</td>
-<td valign="top">
-
-### Distributed systems
-
-Kafka  
-Redis  
-Keycloak  
-PostgreSQL  
-MinIO  
-Docker
-
-</td>
-<td valign="top">
-
-### Frontend & tooling
-
-React  
-TypeScript  
-Vite  
-Rust  
-Gradle  
-GitHub Actions
-
-</td>
-</tr>
-</table>
-
----
-
-## Engineering interests
-
-- distributed backend systems
-- event-driven architecture
-- service boundaries and communication
-- realtime applications
-- authentication and authorization
-- reliability and data consistency
-- production infrastructure
-- architecture evolution and refactoring
-- debugging real runtime behavior
-
-I prefer developing a smaller number of systems deeply over collecting many small showcase projects.
+**Lviv Polytechnic National University** · Software Engineering · Third-year undergraduate
 
 ---
 
 <div align="center">
 
-**Software Engineering · Lviv, Ukraine**
+[**View portfolio and case studies**](https://portfolio.knalis.rest/) · [**Get in touch**](mailto:vitallot21@gmail.com)
 
 </div>
